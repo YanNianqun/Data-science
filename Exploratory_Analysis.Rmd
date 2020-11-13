@@ -7,7 +7,7 @@ output: html_notebook
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Base Plotting System
+## Base plotting system
 
 Including two packages: graphics and grDevices.
 
