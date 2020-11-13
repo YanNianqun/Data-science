@@ -1,15 +1,13 @@
 ---
-title: "Explotary_Data_Analysis"
-author: "Chao"
-date: "2020/11/13"
-output: html_document
+title: "R Notebook"
+output: html_notebook
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Base plotting system
+## Base Plotting System
 
 Including two packages: graphics and grDevices.
 
@@ -21,6 +19,7 @@ parameters for all the plots in the R session and could over-ride the local
 parameters.(parameters such as "mfrow", "mfcol")
 
 #### 1. Ways to initial the plot.
+
 ```{r}
 hist(airquality$Ozone)
 with(airquality, plot(Wind, Ozone))
@@ -55,10 +54,7 @@ with(airquality, {
   plot(Wind, Ozone, main = "Ozne and Wind")
   plot(Solar.R, Ozone, main = "Ozone and Solar Radiation")
   plot(Temp, Ozone, main = "Ozone and Temprature")
-  mtext("Ozone and Weather in NYC", outer = T) # Why doesn't work? Because the deafult oma is 0.
+  mtext("Ozone and Weather in NYC", outer = T) # Why doesn't work? Because the default oma is 0.
 })
 ```
-
-
-
 
