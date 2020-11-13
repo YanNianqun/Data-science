@@ -58,3 +58,11 @@ with(airquality, {
 })
 ```
 
+#### 3. Plot device.
+A graphic device is where you can make a picture appears, fox example, screen, pdf, svg.
+```{r}
+pdf()
+dev.off()
+```
+
+
